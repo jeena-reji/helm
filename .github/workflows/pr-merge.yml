@@ -6,7 +6,7 @@ name: IOSMCN PR Validation
 on:
   pull_request:
     branches:
-      - iosmcnmaster
+      - main
 
 jobs:
 
