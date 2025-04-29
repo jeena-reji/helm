@@ -1,17 +1,17 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright...
 
-name: IOSMCN PR Validation
+name: IOSMCN PR Validation-test1
 
 on:
   push:
     branches:
-      - iosmcnmaster
+      - main
 
 jobs:
 
   staticcheck:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest0
     steps:
       - uses: actions/checkout@v4
       - uses: WillAbides/setup-go-faster@v1.14.0
@@ -21,7 +21,7 @@ jobs:
         with:
           version: latest
           install-go: false
-      - name: Capture Staticcheck Output
+      - name: Capture Staticcheck Output-1
         run: |
           mkdir -p reports         
           staticcheck ./... > reports/staticcheck.txt || true
