@@ -21,7 +21,7 @@ jobs:
         with:
           version: latest
           install-go: false
-      - name: Capture Staticcheck Output
+      - name: Capture Staticcheck Output-1
         run: |
           mkdir -p reports         
           staticcheck ./... > reports/staticcheck.txt || true
