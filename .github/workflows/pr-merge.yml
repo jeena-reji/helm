@@ -4,7 +4,7 @@
 name: IOSMCN PR Validation
 
 on:
-  pull_request:
+  push:
     branches:
       - iosmcnmaster
 
