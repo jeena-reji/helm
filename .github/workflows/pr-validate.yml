@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright...
 
-name: IOSMCN PR Validation-o
+name: IOSMCN PR Validation
 
 on:
   pull_request:
