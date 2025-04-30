@@ -26,7 +26,7 @@ jobs:
           mkdir -p reports         
           staticcheck ./... > reports/staticcheck.txt || true
           cat reports/staticcheck.txt
-      - name: Process Report test
+      - name: Process Report 
         run: |
           temp_report="reports/temp_report.txt"
           if [ -s reports/staticcheck.txt ]; then
