@@ -37,7 +37,7 @@ jobs:
           fi
           mv $temp_report reports/staticcheck.txt
           cat reports/staticcheck.txt
-      - name: Upload Staticcheck Report
+      - name: Upload Staticcheck Report test
         uses: actions/upload-artifact@v4
         with:
           name: staticcheck-report
@@ -59,7 +59,7 @@ jobs:
           args: -v --config ./.golangci.yml --timeout=10m
 
   hadolint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest report
     if: github.repository_owner == 'jeena-reji'
     steps:
       - uses: actions/checkout@v4
